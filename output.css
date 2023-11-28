@@ -793,6 +793,10 @@ video {
     width: fit-content;
   }
 
+  .sm\:w-full {
+    width: 100%;
+  }
+
   .sm\:text-center {
     text-align: center;
   }
