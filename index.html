@@ -7,45 +7,63 @@
     <title>Unicom</title>
     <link rel="icon" href="./img/UNICOM_LOGO.png">
 </head>
-<body class="grid min-w-min">
+<body class="grid">
     <!-- header -->
-    <header class="h-10 fixed w-screen z-10 border-black">
-        <div class="container flex justify-between invisible lg:visible">
-            <img src="./img/UNICOM_LOGO.png" alt="Com'unique">
-            <a class="text-[#631F7C] active" href="./index.html">Acceuil</a>
-            <a class="text-gray-400 cursor-not-allowed" href="#about">A propos</a>
-            <a class="text-gray-400 cursor-not-allowed" href="#contact">Contact</a>
-            <input class="invisible sm:visible" type="text" placeholder="Search..">
+    <header class="bg-white sm:bg-opacity-50 h-20 inline-block align-middle fixed w-screen z-10 border-2 border-black">
+        <div class="flex justify-between h-20 items-center">
+            <img class="sm:ml-10" src="./img/UNICOM_LOGO.png" alt="Com'unique">
+            <div class="container flex justify-evenly invisible sm:visible">
+                <a class="text-[#631F7C] font-bold active" href="./index.html">Acceuil</a>
+                <a class="text-[#631F7C] font-bold cursor-not-allowed" href="#about">A propos</a>
+                <a class="text-[#631F7C] font-bold cursor-not-allowed" href="#contact">Contact</a>
+            </div>
+            <input class="invisible sm:visible border-2 border-[#631F7C] rounded-[10px]" type="text" placeholder=" Recherche...">
         </div>
     </header>
     <!-- Titre -->
-    <div class="bg-[#631F7C] bg-opacity-25 grid grid-rows-2 items-center justify-center m-4 sm:mt-28 mt-10">
-        <h1 class="text-3xl sm:text-5xl font-bold text-center text-[#39DC79]">
-            Campagne de sensibilisation
+    <div class="sm:bg-[#631F7C] sm:bg-opacity-25 grid grid-rows-2 items-center justify-center m-4 mt-20 sm:m-0 sm:mt-20">
+        <h1 class="text-3xl sm:text-5xl font-bold text-center text-[#39DC79] sm:text-[#631F7C] sm:text-start">
+            Unicom
         </h1>
-        <h1 class="text-3xl sm:text-5xl font-bold text-center mt-4">
-            Pour le bien des données personnelles
+        <h1 class="text-3xl sm:text-5xl font-bold text-center mt-4 sm:text-[#631F7C] sm:text-start">
+            l'efficience en toute sécurité
         </h1>
-        <figure class="flex justify-center sm:mt-60 mt-28" data-fullscreen="false">
+        <figure class="flex justify-center mt-28" data-fullscreen="false">
             <video controls preload="metadata">
                 <source src="Unicom.mp4" type="video/mp4">
             </video>
         </figure>
     </div>
+    <!-- section ateliers -->
+    <div class="m-4 ml-8 mt-10 sm:mt-28 sm:m-28 items-center justify-items-center text-center grid grid-rows-3">
+        <h2 class="text-3xl sm:text-5xl font-bold">
+            Découvrez nos ateliers de sensibilisation :
+        </h2>
+        <h2 class="text-2xl sm:text-5xl font-bold text-[#39DC79] sm:mt-4">
+            La fresque des données
+        </h2>
+        <div class="w-20 sm:w-40 dark:bg-gray-700 h-0.5"></div>
+        
+        <img class="flex justify-center" src="./img/fresque.png" alt="Notre atelier">
+        <a class="bg-[#631F7C] text-white h-8 w-28 sm:h-10 sm:w-40 rounded-[30px] text-sm sm:text-lg flex justify-center items-center" href="#ateliers" type="button">
+            En savoir plus
+        </a>
+    </div>
     <!-- tableau section approche -->
-    <h2 class="text-3xl font-bold m-4 ml-8 sm:mt-28 flex justify-start">Notre approche</h2>
-    <div class="w-20 dark:bg-gray-700 h-0.5 m-4 ml-8"></div>
+    <h2 class="text-3xl font-bold m-4 ml-8 sm:mt-28 sm:ml-28 flex justify-start">Notre approche</h2>
+    <div class="w-20 dark:bg-gray-700 h-0.5 m-4 ml-8 sm:ml-28"></div>
 
     
-    <div class="flex gap-4 sm:ml-28 sm:mt-24 mt-10 justify-center">
+    <div class="flex gap-4 sm:mt-24 mt-10 justify-center sm:mb-28">
 
-        <div class="grid grid-rows-3 sm:w-2/12">
-            <h3 class="text-xl font-bold flex items-center m-4 ml-8 w-5/12">Contexte</h3>
-            <p class="bg-[#631F7C] rounded-[10px] text-white h-fit sm:w-48 sm:h-60 sm:max-w-5/12 text-xs sm:text-xl flex text-center">
-                Les intelligences artificielles occupent une place de plus 
-                en plus importante dans notre société : agents virtuels, chatbots,
-                assistants personne
-            </p>
+        <div class="grid grid-rows-3">
+            <h3 class="text-xl font-bold flex items-center m-4 ml-8">Contexte</h3>
+            <div class="bg-[#631F7C] sm:rounded-[50px] flex justify-center">
+                <p class="text-white h-fit sm:h-60 text-xs sm:text-xl flex items-center sm:w-9/12">
+                    Comment l'IA peut-elle prendre une place majeure dans notre 
+                    société alors que notre relation à celle-ci n'est pas clairement définie ?
+                </p>
+            </div>
             <h3 class="text-xl font-bold flex items-center m-4 ml-8">Notre solution</h3>
         </div>
 
@@ -67,54 +85,43 @@
             </div>
         </div>
 
-        <div class="grid grid-rows-3 sm:w-2/12">
-            <p class="bg-[#631F7C] rounded-[10px] text-white h-fit sm:w-48 sm:h-60 sm:max-w-5/12 text-xs sm:text-xl flex items-center">
-                Les intelligences artificielles occupent une place de plus 
-                en plus importante dans notre société : agents virtuels, chatbots,
-                assistants personne
-            </p>
+        <div class="grid grid-rows-3 ">
+            <div class="bg-[#631F7C] sm:rounded-[50px] flex justify-center">
+                <p class=" text-white h-fit sm:h-60 text-xs sm:text-xl flex items-center sm:w-9/12">
+                Les intelligences artificielles occupent une place de plus en plus importante
+                dans notre société : agents virtuels, chatbots, assistants personnels…
+                </p>
+            </div>
+            
             <h3 class="text-xl font-bold flex items-center">Problématique</h3>
-            <p class="bg-[#631F7C] rounded-[10px] text-white h-fit sm:w-48 sm:h-60 sm:max-w-5/12 text-xs sm:text-xl flex items-center">
-                Les intelligences artificielles occupent une place de plus 
-                en plus importante dans notre société : agents virtuels, chatbots,
-                assistants personne
-            </p>
+            <div class="bg-[#631F7C] sm:rounded-[50px] flex justify-center">
+                <p class=" text-white h-fit sm:h-60 text-xs sm:text-xl flex items-center sm:w-9/12">
+                    Nous avons choisis de créer Unicom, un dispositif de sensibilisation,
+                    en parallèle de mettre en place un atelier gamifié : la fresque des données
+                </p>
+            </div>
         </div>
     </div>
-    <!-- section ateliers -->
-    <div class="m-4 ml-8 mt-10 sm:mt-28 sm:m-28 items-center justify-items-center text-center grid grid-rows-3">
-        <h2 class="text-3xl sm:text-5xl font-bold">
-            Découvrez nos ateliers de sensibilisation :
-        </h2>
-        <h2 class="text-2xl sm:text-5xl font-bold text-[#39DC79] sm:mt-4">
-            La fresque des données
-        </h2>
-        <div class="w-20 sm:w-40 dark:bg-gray-700 h-0.5"></div>
-        
-        <img class="flex justify-center m-16 sm:m-32" src="" alt="Notre atelier">
-        <button class="bg-[#631F7C] text-white h-8 w-28 sm:h-10 sm:w-40 rounded-[30px] text-sm sm:text-lg flex justify-center items-center" type="button">
-            En savoir plus
-        </button>
-    </div>
-    <!-- sction description entreprise -->
-    <h2 class="text-3xl font-bold m-4 ml-8 sm:mt-28 flex justify-start">Qui sommes-nous ?</h2>
-    <div class="w-20 dark:bg-gray-700 h-0.5 m-4 ml-8"></div>
+    <!-- section description entreprise -->
+    <div class="sm:bg-[#631F7C] sm:bg-opacity-25 grid items-center justify-center sm:m-20">
+        <h2 class="sm:text-[#631F7C] text-3xl font-bold m-4 ml-8 sm:ml-28 flex justify-start">Qui sommes-nous ?</h2>
+        <div class="w-20 sm:bg-[#631F7C] dark:bg-gray-700 h-0.5 m-4 ml-8 sm:ml-28"></div>
 
-    <p class="text-lg m-4 ml-8 mt-6 sm:m-28">
-        Unicom, une initiative engagée dans la sensibilisation 
-        et l'éducation sur les limites de l'intelligence artificielle (IA) en matière de protection 
-        des données privées. Notre objectif est de promouvoir une utilisation responsable et éthique 
-        de l'IA tout en mettant l'accent sur la sécurité des informations personnelles.
-   </p>
+        <p class="text-lg m-4 ml-8 mt-6 sm:m-28 sm:text-start sm:w-5/12">
+            Unicom, une initiative engagée dans la sensibilisation 
+            et l'éducation sur les limites de l'intelligence artificielle (IA) en matière de protection 
+            des données privées. Notre objectif est de promouvoir une utilisation responsable et éthique 
+            de l'IA tout en mettant l'accent sur la sécurité des informations personnelles.
+        </p>
 
-   <div class="flex justify-center m-10">
-    <button class="bg-[#631F7C] text-white h-8 w-28 sm:h-10 sm:w-40 rounded-[30px] text-sm sm:text-lg flex justify-center items-center" type="button">
-        En savoir plus
-    </button>
+        <div class="flex justify-center m-10 sm:ml-28 mt-24 sm:justify-start">
+            <a class="bg-[#631F7C] text-white h-8 w-28 sm:h-10 sm:w-40 rounded-[30px] text-sm sm:text-lg flex justify-center items-center" href="#about" type="button">
+                En savoir plus
+            </a>
+        </div>
     </div>
-        <!-- footer -->
-        
-    <div class="grid grid-rows-4 items-center justify-center h-96 sm:h-96">
+        <!-- footer -->  
+    <div class="grid grid-rows-4 items-center justify-center h-96 mt-96">
         <img class="flex justify-center m-16 mb-0 sm:m-32" src="./img/UNICOM_LOGO.png" alt="Unicom">
 
         <div class="text-xs sm:text-xl font-extrabold text-center">
