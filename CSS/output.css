@@ -883,6 +883,15 @@ video {
   height: 80%;
 }
 
+.hover\:text-\[\#39DC79\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(57 220 121 / var(--tw-text-opacity));
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
 @media (prefers-color-scheme: dark) {
   .dark\:bg-gray-700 {
     --tw-bg-opacity: 1;

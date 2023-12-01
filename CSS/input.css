@@ -42,7 +42,7 @@ html {
   -moz-tab-size: 4;
   /* 3 */
   -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
   /* 3 */
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
@@ -85,7 +85,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /*
@@ -875,11 +875,21 @@ video {
 }
 
 .max-h-fit {
+  max-height: -moz-fit-content;
   max-height: fit-content;
 }
 
 .h-4\/5 {
   height: 80%;
+}
+
+.hover\:text-\[\#39DC79\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(57 220 121 / var(--tw-text-opacity));
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -894,7 +904,7 @@ video {
     --tw-bg-opacity: 1;
     background-color: rgb(99 31 124 / var(--tw-bg-opacity));
   }
-  
+
   .sm\:bg-opacity-25 {
     --tw-bg-opacity: 0.25;
   }
@@ -915,7 +925,7 @@ video {
   .sm\:justify-center {
     justify-content: center;
   }
-  
+
   .sm\:justify-start {
     justify-content: flex-start;
   }
@@ -972,10 +982,10 @@ video {
     height: 2.5rem;
   }
 
-  .sm\:h-48 { 
+  .sm\:h-48 {
     height: 12rem;
   }
-  
+
   .sm\:h-60 {
     height: 15rem;
   }
@@ -1027,12 +1037,15 @@ video {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
   .sm\:visible {
     visibility: visible;
   }
+
   .sm\:invisible {
     visibility: hidden;
   }
+
   .sm\:rounded-\[50px\] {
     border-radius: 50px;
   }
