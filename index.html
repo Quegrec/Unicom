@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./CSS/output.css" rel="stylesheet">
     <title>Unicom</title>
-    <link rel="icon" href="./img/UNICOM_LOGO.png">
+    <link rel="icon" href="./src/img/UNICOM_LOGO.png">
 </head>
 <body class="grid">
     <!-- header -->
     <header class="bg-white sm:bg-opacity-50 h-20 inline-block align-middle fixed w-screen z-10 border-2 border-black">
         <div class="flex justify-between h-20 items-center">
-            <img class="sm:ml-10" src="./img/UNICOM_LOGO.png" alt="Com'unique">
+            <img class="sm:ml-10" src="./src/img/UNICOM_LOGO.png" alt="Com'unique">
             <div class="container flex justify-evenly invisible sm:visible">
                 <a class="text-[#631F7C] font-bold active hover:text-[#39DC79] hover:underline" href="./index.html">Accueil</a>
                 <a class="text-[#631F7C] font-bold cursor-not-allowed" href="#about">A propos</a>
@@ -22,21 +22,21 @@
         </div>
     </header>
     <!-- Titre -->
-    <div class="sm:bg-[#631F7C] sm:bg-opacity-25 grid grid-rows-2 items-center justify-center m-4 mt-20 sm:m-0 sm:mt-20">
+    <div class="sm:bg-[#631F7C] sm:bg-opacity-25 grid grid-rows-2 justify-items-center items-center m-4 mt-20 sm:m-0 sm:mt-20">
         <h1 class="text-3xl sm:text-5xl font-bold text-center text-[#39DC79] sm:text-[#631F7C] sm:text-start sm:ml-28">
             Unicom
         </h1>
         <h1 class="text-3xl sm:text-5xl font-bold text-center mt-4 sm:text-[#631F7C] sm:text-start sm:ml-28">
             l'efficience en toute sécurité
         </h1>
-        <figure class="flex justify-center mt-28 sm:w-9/12 items-center sm:ml-28" data-fullscreen="false">
+        <figure class="flex place-items-center mt-28 sm:w-9/12 items-center sm:ml-28" data-fullscreen="false">
             <video controls preload="metadata">
-                <source src="Unicom.mp4" type="video/mp4">
+                <source src="./src/Unicom.mp4" type="video/mp4">
             </video>
         </figure>
     </div>
     <!-- section ateliers -->
-    <div class="m-4 ml-8 mt-10 sm:mt-28 sm:m-28 items-center justify-items-center text-center grid grid-rows-3">
+    <div class="grid grid-rows-3 m-4 ml-8 mt-10 sm:mt-28 sm:m-28 items-center justify-items-center text-center">
         <h2 class="text-3xl sm:text-5xl font-bold">
             Découvrez nos ateliers de sensibilisation :
         </h2>
@@ -45,7 +45,7 @@
         </h2>
         <div class="w-20 sm:w-40 dark:bg-gray-700 h-0.5"></div>
         
-        <img class="flex justify-center" src="./img/fresque.png" alt="Notre atelier">
+        <img class="flex justify-center" src="./src/img/fresque.png" alt="Notre atelier">
         <a class="bg-[#631F7C] text-white h-8 w-28 sm:h-10 sm:w-40 rounded-[30px] text-sm sm:text-lg flex justify-center items-center" href="#ateliers" type="button">
             En savoir plus
         </a>
@@ -68,9 +68,9 @@
             <h3 class="text-xl font-bold flex items-center m-4 ml-8 justify-end">Notre solution</h3>
         </div>
 
-        <img class="hidden sm:block" src="./img/col2.png" alt="">
+        <img class="hidden sm:block" src="./src/img/col2.png" alt="">
         
-        <img class="sm:hidden" src="./img/col2.5.png" alt="">
+        <img class="sm:hidden" src="./src/img/col2.5.png" alt="">
 
   
 
@@ -111,14 +111,14 @@
     </div>
         <!-- footer -->  
     <div class="grid grid-rows-4 items-center justify-center h-96 mt-96">
-        <img class="flex justify-center m-16 mb-0 sm:m-32" src="./img/UNICOM_LOGO.png" alt="Unicom">
+        <img class="flex justify-center m-16 mb-0 sm:m-32" src="./src/img/UNICOM_LOGO.png" alt="Unicom">
 
         <div class="text-xs sm:text-xl font-extrabold text-center">
             <p>UNICOM</p>
             <p>L'efficience en toute sécurité</p>    
         </div>
         <div class="flex justify-center items-center sm:mb-10">
-        <img src="./img/Icons_Wrapper.png" alt="Réseaux sociaux">
+        <img src="./src/img/Icons_Wrapper.png" alt="Réseaux sociaux">
     </div>
     <div class="grid grid-rows-2 text-xs text-[#636B75] sm:text-xl text-center gap-10 mb-20">
         <p>© 2023 Unicom Tous droits réservés</p>
