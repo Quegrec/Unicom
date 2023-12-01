@@ -572,6 +572,10 @@ video {
   position: fixed;
 }
 
+.hidden {
+  display: none;
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -759,6 +763,10 @@ video {
   gap: 1rem;
 }
 
+.gap-2 {
+  gap: 0.5rem/* 8px */;
+}
+
 .rounded-\[10px\] {
   border-radius: 10px;
 }
@@ -890,6 +898,10 @@ video {
 
 .hover\:underline:hover {
   text-decoration-line: underline;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1038,6 +1050,10 @@ video {
     line-height: 1.75rem;
   }
 
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:visible {
     visibility: visible;
   }
@@ -1049,4 +1065,8 @@ video {
   .sm\:rounded-\[50px\] {
     border-radius: 50px;
   }
+
+  .sm\:block {
+    display: block;
+}
 }
